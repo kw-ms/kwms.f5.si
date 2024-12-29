@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kwms - Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ナビゲーションバーの設定 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">kwms</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Links</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-bg-primary text-center p-5">
+        <h1>Projects</h1>
+        <button type="button" class="btn btn-dark my-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            アイコンについて
+        </button>
+    </header>
+
+    <div class="container my-5">
+        <h2>プロジェクト一覧</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 my-1">
+                <div class="card">
+                    <img class="card-img-top" src="../img/questionplayer.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">シャッフル問題プレーヤー</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-solid fa-shapes m-1"></i><i class="fa-solid fa-globe m-1"></i><i class="fa-brands fa-html5 m-1"></i></h6>
+                        <p class="card-text">問題をシャッフルして出題。ローカルで軽快に動作。ウェブアプリだからインストール不要。</p>
+                        <a href="./questionplayer.html" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">アイコンについて</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>各プロジェクトには、プロジェクトの種類、プラットフォーム、プログラミング言語を示すアイコンが設置されています。</p>
+                <p>
+                    <strong>プロジェクトの種類</strong>
+                    <br>
+                    <i class="fa-solid fa-shapes mx-1"></i>…アプリケーションやツールなど
+                    <br>
+                    <i class="fa-solid fa-gamepad mx-1"></i>…ゲーム
+                </p>
+                <p>
+                    <strong>プラットフォーム</strong>
+                    <br>
+                    <i class="fa-solid fa-globe mx-1"></i>…ウェブブラウザ
+                    <br>
+                    <i class="fa-brands fa-android mx-1"></i>…Android
+                    <br>
+                    <i class="fa-solid fa-mobile-screen-button"></i>…iOS
+                    <br>
+                    <i class="fa-brands fa-windows mx-1"></i>…Windows
+                    <br>
+                    <i class="fa-brands fa-apple mx-1"></i>…Mac
+                    <br>
+                    <i class="fa-brands fa-linux mx-1"></i>…Linux
+                    <br>
+                    <i class="fa-solid fa-shop mx-1"></i>…独自プラットフォーム
+                </p>
+                <p>
+                    <strong>プログラミング言語</strong>
+                    <br>
+                    <i class="fa-brands fa-html5 mx-1"></i>…HTML関連技術
+                    <br>
+                    <i class="fa-solid fa-circle-question mx-1"></i>…独自プログラミング言語
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
